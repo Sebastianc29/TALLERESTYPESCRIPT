@@ -5,7 +5,7 @@ import {Serie} from "./Serie.js";
 const TablaBodySeries: HTMLElement = document.getElementById("TablaBodySeries")!;
 const promedioText: HTMLElement = document.getElementById("promedio")!;
 
-function TablaDeSeries(series: Serie[]):void{
+function Tabla(series: Serie[]):void{
     let promedio = 0;
     series.forEach(serie => {
         let tableRow = document.createElement("tr");
@@ -21,4 +21,4 @@ function TablaDeSeries(series: Serie[]):void{
     promedioText.innerHTML = `seasons average: ${promedio}`;
 }
  
-TablaDeSeries(series);
+Tabla(series);

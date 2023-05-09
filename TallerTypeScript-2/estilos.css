@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+  }
+  
+  #TablaBodySeries{
+    width: 50%;
+    float: left;
+  }
+
+  #promedio{
+    width: 50%;
+    float: right;
+  }
+  
+  #Serie{
+    max-width: 50%;
+    float: left;
+  }

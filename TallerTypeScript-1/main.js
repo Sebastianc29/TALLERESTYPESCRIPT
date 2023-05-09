@@ -1,7 +1,7 @@
 import { series } from './Data.js';
 const TablaBodySeries = document.getElementById("TablaBodySeries");
 const promedio = document.getElementById("promedio");
-function TablaDeSeries(series) {
+function Tabla(series) {
     let sumatoria = 0;
     series.forEach(serie => {
         let tableRow = document.createElement("tr");
@@ -15,4 +15,4 @@ function TablaDeSeries(series) {
     sumatoria /= series.length;
     promedio.innerHTML = `  Seasons average: ${sumatoria}`;
 }
-TablaDeSeries(series);
+Tabla(series);
